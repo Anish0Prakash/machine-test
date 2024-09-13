@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2>Request Form</h2>
+                <form id="request-form">
+                    <div class="form-group">
+                        <label for="request-type">Request Type</label>
+                        <select class="form-control" id="request-type">
+                            <option value="">Select Request Type</option>
+                            <option value="travel">Travel</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="request-description">Request Description</label>
+                        <textarea class="form-control" id="request-description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select class="form-control" id="priority">
+                            <option value="">Select Priority</option>
+                            <option value="critical">Critical</option>
+                            <option value="normal">Normal</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/request-form.js"></script>
+</body>
+</html>
